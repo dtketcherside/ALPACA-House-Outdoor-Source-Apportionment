@@ -1,3 +1,7 @@
+This repository contains the an R project dedicated to reproducing the analysis and plots for 
+"Wintertime Abundance and Sources of Key Trace Gas and Particle Species in Fairbanks, Alaska": 
+a paper submitted to the Journal for Geophysical Research: Atmospheres in February of 2025.
+
 ALPACA 2022 House Site Indoor and Outdoor Trace Gas and Particulate Data
 
 Prepared by: Damien Ketcherside (damien.ketcherside@umontana.edu)
@@ -10,6 +14,23 @@ Additional Researchers Involved in Data Collection Efforts:
     Dr. Jonas Khun and Dr. Jochen Stutz (University of California - Los Angeles)
     Dr. Meeta Cesler-Maloney, Dr. Jingqui Mao, and Dr. William Simpson (The University of Alaska - Fairbanks)
 			
+R Project Description:
+
+    The R project in this repository, titled "ALPACA House Outdoor Source Apportionment.Rproj",
+    contains three distinct R scripts:
+    
+    	1) OSTRTA.R - Control Script: This single script will rerun the entire analysis, reading
+     	   data from the data folder and sourcing the next two scripts.
+     
+     	2) Custom Functions.R - Function Repository: This script contains all of the functions
+      	   used to perform analyses and generate figures used in the manuscript.
+	  
+      	3) Make and Save Figures.R - Data Visualization Script: Generates and saves figures to the
+       	   output folder as .tiff format images.
+
+    The R project employs the renv package to ensure stability of the project regardless of
+    updates made by developers to their respective packages used to perform these analyses.
+
 Data Description:
 
     The included data was collected at an unoccupied Airbnb in Fairbanks, Alaska as 
